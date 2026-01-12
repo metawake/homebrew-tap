@@ -5,21 +5,21 @@
 class Ragtune < Formula
   desc "EXPLAIN ANALYZE for RAG retrieval — inspect, explain, benchmark, and tune your RAG retrieval layer"
   homepage "https://github.com/metawake/ragtune"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/metawake/ragtune/releases/download/v0.1.0/ragtune_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3653e743b2cf7d3efa9ba523dcb9e71ca915813933314e44a6e3f6013f4c5913"
+      url "https://github.com/metawake/ragtune/releases/download/v0.1.1/ragtune_0.1.1_darwin_amd64.tar.gz"
+      sha256 "cbdff72eb2fc51ee07bb349c209fd0b14bc7490e768b93695ebd25af347db1c5"
 
       def install
         bin.install "ragtune"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/metawake/ragtune/releases/download/v0.1.0/ragtune_0.1.0_darwin_arm64.tar.gz"
-      sha256 "57b5bcafd65976e81f0d1b352db80da122937f826683286d3c9cbccce58f3cab"
+      url "https://github.com/metawake/ragtune/releases/download/v0.1.1/ragtune_0.1.1_darwin_arm64.tar.gz"
+      sha256 "c7481988c22d4efcbf14bff21f3324ddad7af5411ddab573721719855ffb3af1"
 
       def install
         bin.install "ragtune"
@@ -29,15 +29,15 @@ class Ragtune < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metawake/ragtune/releases/download/v0.1.0/ragtune_0.1.0_linux_amd64.tar.gz"
-      sha256 "1237062259a39797588bcfdd86c106586235c746f195cef15332c67b1b88410b"
+      url "https://github.com/metawake/ragtune/releases/download/v0.1.1/ragtune_0.1.1_linux_amd64.tar.gz"
+      sha256 "48a5ec3deb7b17f825bbfab918b9c60e2032b3c4d7445f3fa17189549ef4c461"
       def install
         bin.install "ragtune"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metawake/ragtune/releases/download/v0.1.0/ragtune_0.1.0_linux_arm64.tar.gz"
-      sha256 "cf65b9776e36ad36a2920e7910214e3de654575644fe14efd1f81ca1d870ed9c"
+      url "https://github.com/metawake/ragtune/releases/download/v0.1.1/ragtune_0.1.1_linux_arm64.tar.gz"
+      sha256 "cc8c3810b1f4d1f04428cf3db22cf3f2f569cccdb39ae30c9f1a2d80d1cf2c0e"
       def install
         bin.install "ragtune"
       end
